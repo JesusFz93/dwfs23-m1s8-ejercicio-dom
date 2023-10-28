@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="h1TituloPrincipal" class="titulo-principal texto-blanco">DOM</h1>
+      <p class="texto-negro">Document Object Model</p>
+    </header>
+    <main>
+      <input
+        type="text"
+        id="inputNombre"
+        class="cuadro-texto"
+        autocomplete="off"
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        id="inputApellido"
+        class="cuadro-texto texto-blanco"
+        autocomplete="off"
+      />
+    </main>
+    <section id="seccion_secundaria">
+      <p>Adios mundo</p>
+    </section>
+    <section>
+      <p>Adios mundo</p>
+    </section>
+    <section>
+      <button type="button" onclick="saludar()">Saludar</button>
+      <button id="btnDespedir" type="button">Despedir</button>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
