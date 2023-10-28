@@ -2,3 +2,18 @@ body {
   background-color: rgb(60, 60, 60);
   color: white;
 }
+
+.alerta {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.todo_bien {
+  background-color: green;
+  color: white;
+}
+
+.todo_mal {
+  background-color: red;
+  color: white;
+}

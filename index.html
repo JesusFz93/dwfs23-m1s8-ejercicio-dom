@@ -45,9 +45,31 @@
         alt="manzana"
         width="100px"
         onclick="console.log('le diste click')"
-        onmouseenter="console.log('onmouseenter')"
-        onmouseleave="console.log('onmouseleave')"
+        class="imagen_manzana"
       />
+
+      <button type="button" onclick="mostrarAtributo()">
+        Mostrar Atributo
+      </button>
+      <button type="button" onclick="agregarAtributo()">
+        Agregar Atributo
+      </button>
+      <button type="button" onclick="comprobarAtributo()">
+        Comprobar Atributo
+      </button>
+      <button type="button" onclick="eliminarAtributo()">
+        Eliminar Atributo
+      </button>
+    </section>
+
+    <section>
+      <article id="articleAlerta" class="alerta">Mensaje de la alerta</article>
+
+      <article>
+        <button type="button" onclick="alertaBien()">Alerta bien</button>
+
+        <button type="button" onclick="alertaMal()">Alerta mal</button>
+      </article>
     </section>
 
     <script src="./js/index.js"></script>
