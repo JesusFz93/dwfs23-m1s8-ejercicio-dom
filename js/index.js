@@ -23,13 +23,16 @@
 // seccion_secundaria.appendChild(parrafo);
 
 // EVENTOS DEL DOM
-const saludar = () => {
-  console.log("Hola mundo");
-};
+// const saludar = () => {
+//   console.log("Hola mundo");
+// };
 
-const despedir = () => {
-  console.log("Adios");
-};
+// const despedir = () => {
+//   console.log("Adios");
+// };
 
-const btnDespedir = document.getElementById("btnDespedir");
-btnDespedir.addEventListener("click", despedir);
+// const btnDespedir = document.getElementById("btnDespedir");
+// btnDespedir.addEventListener("click", despedir);
+
+// const imagenManzana = document.getElementById("imagenManzana");
+// imagenManzana.addEventListener("mousedown", console.log("mousedown"));
