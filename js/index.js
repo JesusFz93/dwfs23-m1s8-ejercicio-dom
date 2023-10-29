@@ -38,35 +38,50 @@
 // imagenManzana.addEventListener("mousedown", console.log("mousedown"));
 
 // MANIPULACION ATRIBUTOS
-const imagenManzana = document.getElementById("imagenManzana");
+// const imagenManzana = document.getElementById("imagenManzana");
 
-const mostrarAtributo = () => {
-  const valorAtributo = imagenManzana.getAttribute("src");
-  console.log(valorAtributo);
+// const mostrarAtributo = () => {
+//   const valorAtributo = imagenManzana.getAttribute("src");
+//   console.log(valorAtributo);
+// };
+
+// const agregarAtributo = () => {
+//   imagenManzana.setAttribute(
+//     "src",
+//     "https://huacalli.com.mx/wp-content/uploads/MANZANA-VERDE.png"
+//   );
+// };
+
+// const comprobarAtributo = () => {
+//   const tieneAtributo = imagenManzana.hasAttribute("src");
+//   console.log(tieneAtributo);
+// };
+
+// const eliminarAtributo = () => {
+//   imagenManzana.removeAttribute("src");
+// };
+
+// const articleAlerta = document.getElementById("articleAlerta");
+
+// const alertaBien = () => {
+//   articleAlerta.setAttribute("class", "alerta todo_bien");
+// };
+
+// const alertaMal = () => {
+//   articleAlerta.setAttribute("class", "alerta todo_mal");
+// };
+
+// LOCAL STORAGE
+const listaUsuarios = [];
+
+const agregarInformacion = () => {
+  const nombre = "Jesus";
+  listaUsuarios.push(nombre);
+
+  localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
 };
 
-const agregarAtributo = () => {
-  imagenManzana.setAttribute(
-    "src",
-    "https://huacalli.com.mx/wp-content/uploads/MANZANA-VERDE.png"
-  );
-};
-
-const comprobarAtributo = () => {
-  const tieneAtributo = imagenManzana.hasAttribute("src");
-  console.log(tieneAtributo);
-};
-
-const eliminarAtributo = () => {
-  imagenManzana.removeAttribute("src");
-};
-
-const articleAlerta = document.getElementById("articleAlerta");
-
-const alertaBien = () => {
-  articleAlerta.setAttribute("class", "alerta todo_bien");
-};
-
-const alertaMal = () => {
-  articleAlerta.setAttribute("class", "alerta todo_mal");
+const obtenerInformacion = () => {
+  const usuarios = JSON.parse(localStorage.getItem("usuarios"));
+  console.log(usuarios);
 };
